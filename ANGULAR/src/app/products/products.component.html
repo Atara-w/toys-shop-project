@@ -1,0 +1,28 @@
+<div *ngIf="isSelected==false">
+    <p>products works!</p>
+    <br>
+    <button (click)="lowToHighSortList()">Low to high sort</button>
+    <button (click)="highToLowSortList()">High to low sort</button>
+    <button (click)="ageFilter()">Age filter</button>
+    <input type="number" [(ngModel)]="ageFilter">
+    <!-- <select (change)="onSelectionChange(selectedOption)" [(ngModel)]="selectedOption">
+        <option value="" disabled selected>categories</option>
+        <option value="" *ngFor="let product of productsList">{{product.categoryName}}</option>
+    </select>  -->
+    <div *ngFor="let product of productsList">
+        {{product.categoryName}}
+        <input type="checkbox" >
+    </div>
+    <input type="range">   
+    <br>
+    <ul>
+        <li *ngFor="let product of productsList" (click)="openProductDetail(product)">
+            <img src="{{product.productImage}}" alt="{{product.productName}}">
+            <br>
+            {{product.productName}} -
+            {{product.productPrice}} -
+            {{product.productDescription}}
+        </li>
+    </ul>
+</div>
+<app-product-details [product]="currentProduct" (returnToList)="returnToList()" *ngIf="isSelected==true"></app-product-details>

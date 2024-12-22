@@ -1,0 +1,17 @@
+<p>cart works!</p>
+<form action="" class="cart-form">
+    <ul>
+        <li *ngFor="let product of cartProductsList">
+            <img src="{{product.productImage}}" alt="{{product.productName}}">
+            {{product.productName}} -
+            {{product.productPrice}} -
+            {{product.productDescription}}
+            <button (click)="removeProduct(product)">remove</button>
+            <!-- <input type="number"> כמות-->
+        </li>
+    </ul>
+    <br>
+    <p class="total-price">total price: {{sumAll}}₪</p>
+    <button (click)="isAbove5000()">payment</button>
+    <p *ngIf="above5000==true" style="color: red;">your purchase is above our maximum limited amount. we are sory...</p>
+</form>

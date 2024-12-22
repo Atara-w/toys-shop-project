@@ -1,0 +1,19 @@
+<p class="app-product-details">product-details works!</p>
+<div class="app-product-details">
+    <img src="{{product.productImage}}" alt="{{product.productName}}">
+    {{product.productName}}<br>
+    {{product.productAge}}<br>
+    {{product.productImage}}<br>
+    {{product.productPrice}}<br>
+    {{product.productDescription}}<br>
+    {{product.categoryName}}<br>
+    {{product.companyName}}<br>
+    {{product.productLastUpdate}}<br>
+    <button class="app-product-details" (click)="goBack()">go back</button>
+    <button class="app-product-details" (click)="addToCart()">add to cart</button>
+</div>
+
+
+<!-- {{t.product_name}} -
+{{t.product_price}} -
+{{t.product_description}}- -->
