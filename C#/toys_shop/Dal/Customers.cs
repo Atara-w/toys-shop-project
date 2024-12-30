@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Dal
 {
-    internal class Customers
+    public class Customers
     {
 
         //public async Task<Customer> GetUserByEmailAsync(string email)

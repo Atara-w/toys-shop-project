@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Product } from './models/product';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Category } from './models/category';
 
 
 @Injectable({
@@ -27,10 +28,16 @@ export class ShopServiceService {
   getProductsList(): Observable<Product[]> {
     return this.http.get<Product[]>("http://localhost:5093/api/Products");
   }
-  getProguctsByCategoryFilter(categoryName: string): Observable<Product[]> {
-    return this.http.get<Product[]>("http://localhost:5093/api/Products/category filter")
+  getProguctsByCategoryFilter(categoriesIds: Array<number>): Observable<Product[]> {
+    console.log(categoriesIds);
+    return this.http.post<Product[]>("http://localhost:5093/api/Products/categoryFilter", categoriesIds);
   }
-
+  getProguctsByPriceFilter(num: number): Observable<Product[]> {
+    return this.http.get<Product[]>("http://localhost:5093/api/Products/priceFilter")
+  }
+  getCategoriesList():Observable<Category[]>{
+    return this.http.get<Category[]>("http://localhost:5093/api/Categories/getCategories")
+  }
   cartProductsList: Product[] = [];
   getCartProductsList(): Promise<Product[]> {
     return Promise.resolve(this.cartProductsList);

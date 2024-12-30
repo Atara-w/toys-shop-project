@@ -15,3 +15,4 @@ C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Dal\obj\Debu
 C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Dal\obj\Debug\net8.0\ref\Dal.dll
 C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Dal\bin\Debug\net8.0\Dal.runtimeconfig.json
 C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Dal\obj\Debug\net8.0\Dal.genruntimeconfig.cache
+C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Dal\obj\Debug\net8.0\Dal.sourcelink.json

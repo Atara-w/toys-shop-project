@@ -22,14 +22,14 @@ namespace Dal
             }
         }
         //סינון ע"פ קטגוריה
-        public static async Task<List<Dto.productDto>> FilterByCategoriesAsync(string categoryName)
+        public static async Task<List<Dto.productDto>> FilterByCategoriesAsync(int[] categoriesIds)
         {
             using (ToysShopContext db = new ToysShopContext())
             {
                 var list = await db.Products
                                    .Include(p => p.ProductCategory) // טוען את הקטגוריות
                                    .Include(p => p.ProductCompany) // טוען את החברות
-                                   .Where(p => p.ProductCategory.CategoryName.Equals(categoryName))
+                                   .Where(p => categoriesIds.Contains(p.ProductCategoryId))
                                    .ToListAsync();
                 return converter.productConvert.ProductConverterList(list);
             }

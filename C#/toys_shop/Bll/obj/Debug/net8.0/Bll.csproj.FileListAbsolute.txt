@@ -15,3 +15,4 @@ C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Bll\obj\Debu
 C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Bll\obj\Debug\net8.0\refint\Bll.dll
 C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Bll\obj\Debug\net8.0\Bll.pdb
 C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Bll\obj\Debug\net8.0\ref\Bll.dll
+C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Bll\obj\Debug\net8.0\Bll.sourcelink.json

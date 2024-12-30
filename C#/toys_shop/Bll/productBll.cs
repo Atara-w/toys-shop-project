@@ -9,9 +9,9 @@ namespace Bll
             return await Dal.products.SelectAllAsync();
 
         }
-        public static async Task<List<Dto.productDto>> FilterByCategoriesAsync(string categoryName)
+        public static async Task<List<Dto.productDto>> FilterByCategoriesAsync(int[] categoriesIds)
         {
-            return await Dal.products.FilterByCategoriesAsync(categoryName);
+            return await Dal.products.FilterByCategoriesAsync(categoriesIds);
         }
         public static async Task<List<Dto.productDto>> FilterByPriceAsync(int price)
         {

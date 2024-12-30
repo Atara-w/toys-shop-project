@@ -5,15 +5,10 @@
     <button (click)="highToLowSortList()">High to low sort</button>
     <button (click)="ageFilter()">Age filter</button>
     <input type="number" [(ngModel)]="ageFilter">
-    <!-- <select (change)="onSelectionChange(selectedOption)" [(ngModel)]="selectedOption">
-        <option value="" disabled selected>categories</option>
-        <option value="" *ngFor="let product of productsList">{{product.categoryName}}</option>
-    </select>  -->
-    <div *ngFor="let product of productsList">
-        {{product.categoryName}}
-        <input type="checkbox" >
+    <div *ngFor="let c of categoryList">
+        {{c.categoryName}}<input type="checkbox" [(ngModel)]="c.isSelected" (change)="onCategoryChange()">
     </div>
-    <input type="range">   
+    <!-- <input type="range">    -->
     <br>
     <ul>
         <li *ngFor="let product of productsList" (click)="openProductDetail(product)">
@@ -25,4 +20,5 @@
         </li>
     </ul>
 </div>
-<app-product-details [product]="currentProduct" (returnToList)="returnToList()" *ngIf="isSelected==true"></app-product-details>
+<app-product-details [product]="currentProduct" (returnToList)="returnToList()"
+    *ngIf="isSelected==true"></app-product-details>
