@@ -1,0 +1,44 @@
+<p>payment works!</p>
+
+
+<form action="">
+    <label for="first-name">First Name</label>
+    <input id="first-name" type="text" placeholder="Enter your first name" required pattern="[a-zA-Zא-ת]+"
+        title="ניתן להזין רק אותיות" />
+
+    <label for="last-name">Last Name</label>
+    <input id="last-name" type="text" placeholder="Enter your last name" required pattern="[a-zA-Zא-ת]+"
+        title="ניתן להזין רק אותיות" />
+
+    <label for="phone-number">Phone Number</label>
+    <input id="phone-number" type="text" placeholder="Enter your phone number" required minlength="9" maxlength="10" />
+
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your email" required />
+
+    <label for="city">City</label>
+    <input id="city" type="text" placeholder="Enter your city" required pattern="[a-zA-Zא-ת]+"
+        title="ניתן להזין רק אותיות" />
+
+    <label for="street">Street</label>
+    <input id="street" type="text" placeholder="Enter your street" required pattern="[a-zA-Zא-ת]+"
+        title="ניתן להזין רק אותיות" />
+
+    <label for="house-number">House Number</label>
+    <input id="house-number" type="number" placeholder="Enter your house number" required />
+
+    <label for="birthday">birthday</label>
+    <!-- <input id="birthday" type="date" placeholder="Enter your date of birth" [(ngModel)]="birthday" required> -->
+
+    <label for="card-number">Credit Card Number</label>
+    <input id="card-number" type="text" placeholder="Enter your credit card number" required minlength="13"
+        maxlength="19" pattern="[0-9]+" title="יש להזין מספר כרטיס אשראי חוקי (13 עד 19 ספרות בלבד)" />
+
+    <label for="expiry">Expiry Date</label>
+    <input id="expiry" type="month" required>
+
+    <label for="cvv">CVV</label>
+    <input id="cvv" type="text" placeholder="123" required maxlength="3">
+    <p>total price: {{sumAll}}₪</p>
+    <button type="submit">Complete Payment</button>
+</form>

@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42CBAD4C-69FC-49E7-92F4-DC4726665404}|Dal\\Dal.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\c#\\toys_shop\\dal\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42CBAD4C-69FC-49E7-92F4-DC4726665404}|Dal\\Dal.csproj|solutionrelative:dal\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42CBAD4C-69FC-49E7-92F4-DC4726665404}|Dal\\Dal.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\c#\\toys_shop\\dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42CBAD4C-69FC-49E7-92F4-DC4726665404}|Dal\\Dal.csproj|solutionrelative:dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF74332-E952-4437-BBB4-F23AF5E42773}|Bll\\Bll.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\c#\\toys_shop\\bll\\productbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF74332-E952-4437-BBB4-F23AF5E42773}|Bll\\Bll.csproj|solutionrelative:bll\\productbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42CBAD4C-69FC-49E7-92F4-DC4726665404}|Dal\\Dal.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\c#\\toys_shop\\dal\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42CBAD4C-69FC-49E7-92F4-DC4726665404}|Dal\\Dal.csproj|solutionrelative:dal\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D7DD8B1-8A96-4BF2-B373-2854C16172DE}|WebApi\\WebApi.csproj|c:\\users\\user\\desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\c#\\toys_shop\\webapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D7DD8B1-8A96-4BF2-B373-2854C16172DE}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\Dal\\models\\Product.cs",
+              "RelativeDocumentMoniker": "Dal\\models\\Product.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\Dal\\models\\Product.cs",
+              "RelativeToolTip": "Dal\\models\\Product.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA1wAsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T15:42:03.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "products.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\Dal\\products.cs",
+              "RelativeDocumentMoniker": "Dal\\products.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\Dal\\products.cs",
+              "RelativeToolTip": "Dal\\products.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAuwB8AAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T13:08:20.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "productBll.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\Bll\\productBll.cs",
+              "RelativeDocumentMoniker": "Bll\\productBll.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\Bll\\productBll.cs",
+              "RelativeToolTip": "Bll\\productBll.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T13:08:00.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Categories.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\Dal\\Categories.cs",
+              "RelativeDocumentMoniker": "Dal\\Categories.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\Dal\\Categories.cs",
+              "RelativeToolTip": "Dal\\Categories.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T11:41:02.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\WebApi\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E9\u05D9\u05E8\u05D4 \u0026 \u05E2\u05D8\u05E8\u05D4\\C#\\toys_shop\\WebApi\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwBUAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T11:30:53.321Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

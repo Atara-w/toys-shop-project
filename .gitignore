@@ -1,0 +1,9 @@
+# Angular
+node_modules/
+
+# C#
+bin/
+obj/
+.vs/
+
+# SQL
