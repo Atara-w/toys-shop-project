@@ -3,12 +3,13 @@
     <br>
     <button (click)="lowToHighSortList()">Low to high sort</button>
     <button (click)="highToLowSortList()">High to low sort</button>
-    <button (click)="ageFilter()">Age filter</button>
-    <input type="number" [(ngModel)]="ageFilter">
+    <!-- <button (click)="ageFilter()">Age filter</button> -->
+    <label for="ageFilter">age filter</label><input type="number" id="ageFilter" [(ngModel)]="ageFilter" (change)="ageFilter()">
+    <label for="priceFilter">price filter</label> <input type="number" id="priceFilter" [(ngModel)]="price" min="0" max="1000000" (change)="onPriceChange()"
+        placeholder="Enter a price">
     <div *ngFor="let c of categoryList">
-        {{c.categoryName}}<input type="checkbox" [(ngModel)]="c.isSelected" (change)="onCategoryChange()">
+        {{c.categoryName}}<input type="checkbox" [(ngModel)]="c.isSelect" (change)="onCategoryChange()">
     </div>
-    <!-- <input type="range">    -->
     <br>
     <ul>
         <li *ngFor="let product of productsList" (click)="openProductDetail(product)">

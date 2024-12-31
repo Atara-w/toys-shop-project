@@ -19,11 +19,12 @@ export class ProductsComponent {
   age: number = 0;
   isSelected: boolean = false;
   currentProduct: Product;
+  price: number;
 
   constructor(private shopService: ShopServiceService) {
     //כותבים כך אם לא מתחברים למסד
     // this.shop_service.get_products_list().then(data => this.products_list = data).catch(err => console.log(err));
-   //שליפת רשימת המוצרים
+    //שליפת רשימת המוצרים
     this.shopService.getProductsList().subscribe(
       {
         next: ((data: Product[]) => this.productsList = data),
@@ -60,14 +61,23 @@ export class ProductsComponent {
   returnToList() {
     this.isSelected = false;
   }
-//(C#פונקצית סינון לפי קטגוריה (ב
+  //(C#פונקצית סינון לפי קטגוריה (ב
   onCategoryChange() {
+    //isSelectשל הקטגוריות הבחורות- ה idיצירת מערך שבו יהיו כל ה
     const ids = new Array<number>();
-    this.categoryList.forEach(c => { if (c.isSelected) ids.push(c.categoryId) });
+    //ids למערך שהגדרנו למעלה- מערך isSelectעל רשימת הקטגוריות והכנסת הקטגוריות הבחורות- ה forריצה ב
+    this.categoryList.forEach(c => { if (c.isSelect) ids.push(c.categoryId) });
+    //C#ל ids שליחת המערך
     this.shopService.getProguctsByCategoryFilter(ids).subscribe({
       next: ((data: Product[]) => this.productsList = data),
       error: ((error: any) => console.log(error))
     })
   }
-
+  //(C#פונקצית סינון לפי מחיר (ב  
+  onPriceChange() {
+    this.shopService.getProguctsByPriceFilter(this.price).subscribe({
+      next: ((data: Product[]) => this.productsList = data),
+      error: ((error: any) => console.log(error))
+    })
+  }
 }
