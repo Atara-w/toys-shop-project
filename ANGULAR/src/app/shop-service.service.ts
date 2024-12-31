@@ -28,14 +28,16 @@ export class ShopServiceService {
   getProductsList(): Observable<Product[]> {
     return this.http.get<Product[]>("http://localhost:5093/api/Products");
   }
+  //C#ל idsושליחת מערך ה postל C#שינוי הפונקציה ב
   getProguctsByCategoryFilter(categoriesIds: Array<number>): Observable<Product[]> {
     console.log(categoriesIds);
     return this.http.post<Product[]>("http://localhost:5093/api/Products/categoryFilter", categoriesIds);
   }
-  getProguctsByPriceFilter(num: number): Observable<Product[]> {
-    return this.http.get<Product[]>("http://localhost:5093/api/Products/priceFilter")
+  getProguctsByPriceFilter(price: number): Observable<Product[]> {
+    console.log(price);
+    return this.http.post<Product[]>(`http://localhost:5093/api/Products/priceFilter?price=${price}`, null)
   }
-  getCategoriesList():Observable<Category[]>{
+  getCategoriesList(): Observable<Category[]> {
     return this.http.get<Category[]>("http://localhost:5093/api/Categories/getCategories")
   }
   cartProductsList: Product[] = [];

@@ -22,6 +22,7 @@ namespace Dal
             }
         }
         //סינון ע"פ קטגוריה
+        //הפונקציה מקבלת מערך מספרים
         public static async Task<List<Dto.productDto>> FilterByCategoriesAsync(int[] categoriesIds)
         {
             using (ToysShopContext db = new ToysShopContext())
@@ -29,6 +30,7 @@ namespace Dal
                 var list = await db.Products
                                    .Include(p => p.ProductCategory) // טוען את הקטגוריות
                                    .Include(p => p.ProductCompany) // טוען את החברות
+                                   //שהוא קיבל idבתנאי זה הוא שולף את הקטגוריות לפי מערך ה
                                    .Where(p => categoriesIds.Contains(p.ProductCategoryId))
                                    .ToListAsync();
                 return converter.productConvert.ProductConverterList(list);
