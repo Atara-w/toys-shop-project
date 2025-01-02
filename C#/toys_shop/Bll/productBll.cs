@@ -9,13 +9,18 @@ namespace Bll
             return await Dal.products.SelectAllAsync();
 
         }
-        public static async Task<List<Dto.productDto>> FilterByCategoriesAsync(int[] categoriesIds)
+        //public static async Task<List<Dto.productDto>> FilterByCategoriesAsync(int[] categoriesIds)
+        //{
+        //    return await Dal.products.FilterByCategoriesAsync(categoriesIds);
+        //}
+        //public static async Task<List<Dto.productDto>> FilterByPriceAsync(int price)
+        //{
+        //    return await Dal.products.FilterByPriceAsync(price);
+        //}
+
+        public static async Task<List<Dto.productDto>> Filters(int[] categoriesIds, int? price)
         {
-            return await Dal.products.FilterByCategoriesAsync(categoriesIds);
-        }
-        public static async Task<List<Dto.productDto>> FilterByPriceAsync(int price)
-        {
-            return await Dal.products.FilterByPriceAsync(price);
+            return await Dal.products.Filters(categoriesIds,price);
         }
     }
 }

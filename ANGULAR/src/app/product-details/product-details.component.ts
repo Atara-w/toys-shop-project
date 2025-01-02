@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './product-details.component.html'
 })
 export class ProductDetailsComponent {
-  // showMessage=false;
+  showMessage=false;
   @Input() product: Product;
   @Output() returnToList = new EventEmitter<void>();
   goBack() {
@@ -24,10 +24,10 @@ export class ProductDetailsComponent {
   addToCart() {
     this.shopService.cartProductsList.push(this.product);
     this.shopService.sum = this.shopService.sum + this.product.productPrice;
-    // this.showMessage=true;
-    // setTimeout(() => {
-    //   this.showMessage = false;  // מסתיר את ההודעה אחרי 2 שניות
-    // }, 1000);
+    this.showMessage=true;
+    setTimeout(() => {
+      this.showMessage = false;  // מסתיר את ההודעה אחרי 2 שניות
+    }, 1000);
   }
 
 }

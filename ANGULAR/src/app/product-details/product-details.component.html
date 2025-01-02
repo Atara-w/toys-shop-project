@@ -10,12 +10,10 @@
     {{product.companyName}}<br>
     {{product.productLastUpdate}}<br>
     <button class="app-product-details" (click)="goBack()">go back</button>
-    <button class="app-product-details" (click)="addToCart()">add to cart</button>
-    <!-- <button class="app-product-details" *ngIf="showMessage==false" (click)="addToCart()">add to cart</button> -->
-    <!-- <button class="app-product-details" *ngIf="showMessage">Added successfully 🛒</button> -->
+    <!-- <button class="app-product-details" (click)="addToCart()">add to cart</button> -->
+    <button class="app-product-details" *ngIf="showMessage==false" (click)="addToCart()">add to cart</button>
+    <button class="app-product-details" *ngIf="showMessage">Added successfully 🛒</button>
 </div>
-
-
 <!-- {{t.product_name}} -
 {{t.product_price}} -
 {{t.product_description}}- -->

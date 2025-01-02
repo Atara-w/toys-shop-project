@@ -112,7 +112,7 @@ body {
   .app-product-details button {
     display: inline-block;
     margin: 10px 5px;
-    /* background-color: #45a049; */
+    background-color: #45a049;
   }
   
   /* PAYMENT PAGE */

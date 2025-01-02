@@ -61,21 +61,32 @@ export class ProductsComponent {
   returnToList() {
     this.isSelected = false;
   }
-  //(C#פונקצית סינון לפי קטגוריה (ב
-  onCategoryChange() {
-    //isSelectשל הקטגוריות הבחורות- ה idיצירת מערך שבו יהיו כל ה
+  // //(C#פונקצית סינון לפי קטגוריה (ב
+  // onCategoryChange() {
+  //   //isSelectשל הקטגוריות הבחורות- ה idיצירת מערך שבו יהיו כל ה
+  //   const ids = new Array<number>();
+  //   //ids למערך שהגדרנו למעלה- מערך isSelectעל רשימת הקטגוריות והכנסת הקטגוריות הבחורות- ה forריצה ב
+  //   this.categoryList.forEach(c => { if (c.isSelect) ids.push(c.categoryId) });
+  //   //C#ל ids שליחת המערך
+  //   this.shopService.getProguctsByCategoryFilter(ids).subscribe({
+  //     next: ((data: Product[]) => this.productsList = data),
+  //     error: ((error: any) => console.log(error))
+  //   })
+  //  this.onPriceChange();
+  // }
+  // //(C#פונקצית סינון לפי מחיר (ב  
+  // onPriceChange() {
+  //   this.shopService.getProguctsByPriceFilter(this.price).subscribe({
+  //     next: ((data: Product[]) => this.productsList = data),
+  //     error: ((error: any) => console.log(error))
+  //   })
+  //   this.onCategoryChange();
+  // }
+
+  filters() {
     const ids = new Array<number>();
-    //ids למערך שהגדרנו למעלה- מערך isSelectעל רשימת הקטגוריות והכנסת הקטגוריות הבחורות- ה forריצה ב
     this.categoryList.forEach(c => { if (c.isSelect) ids.push(c.categoryId) });
-    //C#ל ids שליחת המערך
-    this.shopService.getProguctsByCategoryFilter(ids).subscribe({
-      next: ((data: Product[]) => this.productsList = data),
-      error: ((error: any) => console.log(error))
-    })
-  }
-  //(C#פונקצית סינון לפי מחיר (ב  
-  onPriceChange() {
-    this.shopService.getProguctsByPriceFilter(this.price).subscribe({
+    this.shopService.filters(ids,this.price).subscribe({
       next: ((data: Product[]) => this.productsList = data),
       error: ((error: any) => console.log(error))
     })
