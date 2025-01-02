@@ -9,3 +9,4 @@ C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Dto\obj\Debu
 C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Dto\obj\Debug\net8.0\refint\Dto.dll
 C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Dto\obj\Debug\net8.0\Dto.pdb
 C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Dto\obj\Debug\net8.0\ref\Dto.dll
+C:\Users\User\Desktop\פרויקט שירה & עטרה\C#\toys_shop\Dto\obj\Debug\net8.0\Dto.sourcelink.json

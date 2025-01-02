@@ -3,6 +3,7 @@ import { Product } from './models/product';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Category } from './models/category';
+import { Customer } from './models/customer';
 
 
 @Injectable({
@@ -28,14 +29,21 @@ export class ShopServiceService {
   getProductsList(): Observable<Product[]> {
     return this.http.get<Product[]>("http://localhost:5093/api/Products");
   }
-  //C#ל idsושליחת מערך ה postל C#שינוי הפונקציה ב
-  getProguctsByCategoryFilter(categoriesIds: Array<number>): Observable<Product[]> {
-    console.log(categoriesIds);
-    return this.http.post<Product[]>("http://localhost:5093/api/Products/categoryFilter", categoriesIds);
-  }
-  getProguctsByPriceFilter(price: number): Observable<Product[]> {
-    console.log(price);
-    return this.http.post<Product[]>(`http://localhost:5093/api/Products/priceFilter?price=${price}`, null)
+  // //C#ל idsושליחת מערך ה postל C#שינוי הפונקציה ב
+  // getProguctsByCategoryFilter(categoriesIds: Array<number>): Observable<Product[]> {
+  //   console.log(categoriesIds);
+  //   return this.http.post<Product[]>("http://localhost:5093/api/Products/categoryFilter", categoriesIds);
+  // }
+  // getProguctsByPriceFilter(price: number): Observable<Product[]> {
+  //   console.log(price);
+  //   return this.http.post<Product[]>(`http://localhost:5093/api/Products/priceFilter?price=${price}`, null)
+  // }
+  filters(categoriesIds: Array<number>, price: number) {
+    if (price >= 0)
+      return this.http.post<Product[]>(`http://localhost:5093/api/Products/filters?price=${price}`, categoriesIds)
+    else
+      return this.http.post<Product[]>("http://localhost:5093/api/Products/filters", categoriesIds)
+
   }
   getCategoriesList(): Observable<Category[]> {
     return this.http.get<Category[]>("http://localhost:5093/api/Categories/getCategories")
@@ -46,10 +54,11 @@ export class ShopServiceService {
   }
 
 
-  login(email: string, password: string): Observable<any> {
-    const loginData = { email, password };  // נתונים שנשלחים ל-API
-    return this.http.post<any>('', loginData); // קריאת POST ל-API
+  signIn(email: string, password: string): Observable<Customer> {
+    const loginData = { email, password };
+    return this.http.post<Customer>("http://localhost:5093/api/Customers", loginData);
   }
 
   sum: number = 0;
+  FilteredProductList: Product[];
 }

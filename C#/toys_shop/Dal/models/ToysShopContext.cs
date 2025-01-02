@@ -37,7 +37,7 @@ public partial class ToysShopContext : DbContext
 
         modelBuilder.Entity<Category>(entity =>
         {
-            entity.HasKey(e => e.CategoryId).HasName("PK__category__23CAF1D8DDD5DE26");
+            entity.HasKey(e => e.CategoryId).HasName("PK__category__23CAF1D8116527ED");
 
             entity.ToTable("category");
 
@@ -50,7 +50,7 @@ public partial class ToysShopContext : DbContext
 
         modelBuilder.Entity<Company>(entity =>
         {
-            entity.HasKey(e => e.CompanyId).HasName("PK__company__AD54599049C84535");
+            entity.HasKey(e => e.CompanyId).HasName("PK__company__AD545990DAD2D9EC");
 
             entity.ToTable("company");
 
@@ -63,7 +63,7 @@ public partial class ToysShopContext : DbContext
 
         modelBuilder.Entity<Customer>(entity =>
         {
-            entity.HasKey(e => e.CustomerId).HasName("PK__customer__B611CB7D043C05EE");
+            entity.HasKey(e => e.CustomerId).HasName("PK__customer__B611CB7DE188C23D");
 
             entity.ToTable("customers");
 
@@ -73,14 +73,14 @@ public partial class ToysShopContext : DbContext
                 .HasMaxLength(30)
                 .IsUnicode(false)
                 .HasColumnName("customerEmail");
-            entity.Property(e => e.CustomerFirstName)
+            entity.Property(e => e.CustomerName)
                 .HasMaxLength(30)
                 .IsUnicode(false)
-                .HasColumnName("customerFirstName");
-            entity.Property(e => e.CustomerLastName)
+                .HasColumnName("customerName");
+            entity.Property(e => e.CustomerPassword)
                 .HasMaxLength(30)
                 .IsUnicode(false)
-                .HasColumnName("customerLastName");
+                .HasColumnName("customerPassword");
             entity.Property(e => e.CustomerPhone)
                 .HasMaxLength(10)
                 .IsUnicode(false)
@@ -89,7 +89,7 @@ public partial class ToysShopContext : DbContext
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.HasKey(e => e.ProductId).HasName("PK__products__2D10D16A19338304");
+            entity.HasKey(e => e.ProductId).HasName("PK__products__2D10D16A5582FBB1");
 
             entity.ToTable("products");
 
@@ -124,7 +124,7 @@ public partial class ToysShopContext : DbContext
 
         modelBuilder.Entity<Purchase>(entity =>
         {
-            entity.HasKey(e => e.PurchaseId).HasName("PK__purchase__0261226C49C028AA");
+            entity.HasKey(e => e.PurchaseId).HasName("PK__purchase__0261226CB7212837");
 
             entity.ToTable("purchases");
 
@@ -145,7 +145,7 @@ public partial class ToysShopContext : DbContext
 
         modelBuilder.Entity<PurchaseDetail>(entity =>
         {
-            entity.HasKey(e => e.PurchaseDetailsId).HasName("PK__purchase__67AF052932C2B79E");
+            entity.HasKey(e => e.PurchaseDetailsId).HasName("PK__purchase__67AF0529219FF6DA");
 
             entity.ToTable("purchaseDetails");
 

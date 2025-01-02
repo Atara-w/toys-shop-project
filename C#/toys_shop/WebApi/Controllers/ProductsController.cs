@@ -12,19 +12,25 @@ namespace WebApi.Controllers
         {
             return await Bll.productBll.SelectAllAsync();
         }
-        //postל HTTPשינוי ה
-        [HttpPost("categoryFilter")]
-        //לכך שהיא מקבלת מערך מספרים DALשינוי הפונקציה ב
-        public async Task<List<Dto.productDto>> FilterByCategoriesAsync(int[] categoriesIds)
-        {
-            return await Bll.productBll.FilterByCategoriesAsync(categoriesIds);
-        }
+        ////postל HTTPשינוי ה
+        //[HttpPost("categoryFilter")]
+        ////לכך שהיא מקבלת מערך מספרים DALשינוי הפונקציה ב
+        //public async Task<List<Dto.productDto>> FilterByCategoriesAsync(int[] categoriesIds)
+        //{
+        //    return await Bll.productBll.FilterByCategoriesAsync(categoriesIds);
+        //}
 
-        [HttpPost("priceFilter")]
-        public async Task<List<Dto.productDto>> FilterByPriceAsync(int price)
-        {
-            return await Bll.productBll.FilterByPriceAsync(price);
-        }
+        //[HttpPost("priceFilter")]
+        //public async Task<List<Dto.productDto>> FilterByPriceAsync(int price)
+        //{
+        //    return await Bll.productBll.FilterByPriceAsync(price);
+        //}
 
+
+        [HttpPost("filters")]
+        public async Task<List<Dto.productDto>> Filters(int[] categoriesIds, int? price)
+        {
+            return await Bll.productBll.Filters(categoriesIds,price);
+        }
     }
 }

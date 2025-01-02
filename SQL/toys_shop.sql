@@ -26,6 +26,7 @@ customerId INT IDENTITY NOT NULL PRIMARY KEY,
 customerName VARCHAR(30) NOT NULL,
 customerPhone VARCHAR(10) NOT NULL,
 customerEmail VARCHAR(30) NOT NULL,
+customerPassword VARCHAR(30) NOT NULL,
 customerDateOfBirth DATE NOT NULL
 )
 
@@ -72,12 +73,13 @@ INSERT INTO products (productName,productCategoryId,productCompanyId, productDes
 ('Chess Game', 2, 1, 'Classic chess game with wooden pieces', 130, 'https://cdn.pixabay.com/photo/2021/08/28/09/19/chess-6580492_640.jpg', GETDATE()),
 ('Football Game', 5, 5, 'Outdoor football game with net and ball', 250, 'https://cdn.pixabay.com/photo/2014/04/02/16/17/ball-306820_640.png', GETDATE())
 -- customers table
-INSERT INTO customers (customerName, customerPhone, customerEmail, customerDateOfBirth) VALUES
-('Dana Levi', '0541234567', 'danaLevi@gmail.com', '1990-05-12'),
-('Yossi Cohen', '0527654321', 'yossiCohen@gmail.com', '1985-11-22'),
-('Ronit Barak', '0539876543', 'ronitBarak@gmail.com', '1995-07-01'),
-('Moshe Ohana', '0545556677', 'mosheOhana@gmail.com', '1980-03-15'),
-('Efrat Kedem', '0523334455', 'efratKedem@gmail.com', '1992-08-08')
+INSERT INTO customers (customerName, customerPhone, customerEmail, customerPassword, customerDateOfBirth) VALUES
+('Dana Levi', '0541234567', 'danaLevi@gmail.com','AB123@', '1990-05-12'),
+('Yossi Cohen', '0527654321', 'yossiCohen@gmail.com','yosssss', '1985-11-22'),
+('Ronit Barak', '0539876543', 'ronitBarak@gmail.com', 'karabTinor','1995-07-01'),
+('Moshe Ohana', '0545556677', 'mosheOhana@gmail.com','myNameIsMoyshalek', '1980-03-15'),
+('Efrat Kedem', '0523334455', 'efratKedem@gmail.com','qwert963', '1992-08-08')
+
 
 -- purchase table
 INSERT INTO purchases (purchaseCustomerId, purchaseDate, purchaseAmountToPay, purchaseMention) VALUES
